@@ -1,0 +1,54 @@
+body {
+     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-floral-wallpaper_52683-67103.jpg?t=st=1734464151~exp=1734467751~hmac=74756c51363727485e208171afa36ecdd473b937e5266ea1db1c65eab69240b9&w=826);
+    background-size: cover;
+    color: rgb(148, 91, 42);
+  }
+  .box {
+    text-align: center;
+    background: radial-gradient(circle at 10% 20%, rgb(255, 252, 214) 0%, rgba(255, 102, 102, 0.44) 90%);
+    padding: 10px;
+  }
+  
+  h1 {
+    color: rgb(73, 87, 88);
+  }
+  
+  .container{
+    margin: 40px;
+    padding: 20px;
+    border: 1px solid rgb(215, 122, 122);
+    border-radius: 10px;
+    background: transparent;
+    text-align: left;
+
+  }
+  
+  input, button {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid rgb(186, 125, 125);
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: rgb(232, 165, 107);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: peru;
+  }
+  table{
+    width: 50%;
+  }
+  
+  thead {
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    text-align: left;
+  }

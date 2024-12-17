@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div id="login-container" class="container">
+   <h1>Log In</h1>
+  <form id="login-form">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Log In</button>
+  </form>
+ <p>Don't you have any account? <a href="#" id="signup-link">Sign up now.</a></p>
+</div>
+
+<div id="signup-container" class="container" style="display: none;">
+  <h1>Sign Up</h1>
+  <form id="signup-form">
+    <label for="new-username">Username:</label>
+    <input type="text" id="new-username" name="new-username" required>
+
+    <label for="new-password">Password:</label>
+    <input type="password" id="new-password" name="new-password" required>
+
+    <button type="submit">Sign Up</button>
+  </form>
+    <p>Already have an account? <a href="#" id="login-link">Log in now.</a></p>
+</div> 
+<div id="Eventplan" class="container" style="display: none;">
+<div class="box">
+    <h1>Personalized Event Planner</h1>
+  </div>
+<div class="container" > 
+
+<div id="Countdown">
+  <h2>Event Countdown</h2>
+  <input type="date" id="Date" placeholder="Select your event date">
+  <p id="CountdownDisplay">Days left:</p>
+</div>
+
+  <div id="TaskList">
+    <h2>To-Do List</h2>
+    <input type="text" id="NewTask" placeholder="Add a new task">
+    <button id="AddTask">Add Task</button>
+    <ul id="TaskList"></ul>
+  </div>
+
+  <div id="Budget">
+    <h2>Budget Tracker</h2>
+    <form id="Budget">
+      <input type="text" id="ExpenseName" placeholder="Expense Name">
+      <input type="number" id="ExpenseAmount" placeholder="Amount">
+      <button type="submit">Add Expense</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody id="ExpenseTable"></tbody>
+    </table>
+    <p>Total: <span id="TotalBudget">0</span></p>
+  </div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
